@@ -27,15 +27,15 @@ const App = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link as={Link} to="/project1_car_market_analysis">Dashboard</Nav.Link>
-              <Nav.Link as={Link} to="/project1_car_market_analysis/highlight">Highlighted</Nav.Link>
+              <Nav.Link as={Link} to="/Car-Market-Analytics">Dashboard</Nav.Link>
+              <Nav.Link as={Link} to="/Car-Market-Analytics/highlight">Highlighted</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
         </Navbar>
       <Routes>
-        <Route path="/project1_car_market_analysis" element={<DataTable data={Cars} brand={MMList} />} />
-        <Route path="/project1_car_market_analysis/highlight" element={<Car data={Cars} />} />
+        <Route path="/Car-Market-Analytics" element={<DataTable data={Cars} brand={MMList} />} />
+        <Route path="/Car-Market-Analytics/highlight" element={<Car data={Cars} />} />
       </Routes>
       
     </Router>
