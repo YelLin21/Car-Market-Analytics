@@ -12,7 +12,7 @@ const App = () => {
 
   return (
 
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <Navbar
         style={{
           position: "sticky",
@@ -27,15 +27,15 @@ const App = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link as={Link} to="/Car-Market-Analytics">Dashboard</Nav.Link>
-              <Nav.Link as={Link} to="/Car-Market-Analytics/highlight">Highlighted</Nav.Link>
+              <Nav.Link as={Link} to="/">Dashboard</Nav.Link>
+              <Nav.Link as={Link} to="/highlight">Highlighted</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
         </Navbar>
       <Routes>
-        <Route path="/Car-Market-Analytics" element={<DataTable data={Cars} brand={MMList} />} />
-        <Route path="/Car-Market-Analytics/highlight" element={<Car data={Cars} />} />
+        <Route path="/" element={<DataTable data={Cars} brand={MMList} />} />
+        <Route path="/highlight" element={<Car data={Cars} />} />
       </Routes>
       
     </Router>
