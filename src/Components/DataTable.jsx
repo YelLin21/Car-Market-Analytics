@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Table, FormControl } from 'react-bootstrap';
 import carList from '../assets/taladrod-cars.min.json'
-import PieChart from './PieChart';
+import PieChart from './Piechart';
 import StackedBarChart from './StackedbarChart2';
 
 
