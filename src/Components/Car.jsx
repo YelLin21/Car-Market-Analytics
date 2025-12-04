@@ -70,7 +70,7 @@ export default function Highlight() {
                     <Tabs defaultActiveKey="All" id="highlighted-cars-tabs">
                         {Object.keys(groupedHighlightedCars).map(brand => (
                             <Tab eventKey={brand} key={brand} title={brand}>
-                                <div className="car-container">
+                                <div className="car-container pt-4">
                                     {groupedHighlightedCars[brand].map(car => (
                                         <div key={car.Cid} className="car-item highlighted">
                                             <img src={car.Img300} alt={car.NameMMT} className="car-image" />
@@ -89,11 +89,11 @@ export default function Highlight() {
                     </Tabs>
                     
                     {/* Conditionally render "No cars highlighted yet." text */}
-                    {highlightedCars.length === 0 && <p>No cars highlighted yet.</p>}
+                    {highlightedCars.length === 0 && <p className="pt-4">No cars highlighted yet.</p>}
                 </div>
 
                 <div>
-                    <label htmlFor="brandFilter" className="filter-label">Filter by Brand: </label>
+                    <label htmlFor="brandFilter" className="filter-label pt-4">Filter by Brand: </label>
                     <select
                         id="brandFilter"
                         value={selectedBrand}
