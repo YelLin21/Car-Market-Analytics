@@ -1,4 +1,4 @@
-# Car Market Analytics Dashboard
+# Car Market Analytics Dashboard Project for Web Development Class
 
 [![Live Demo](https://img.shields.io/badge/demo-live-success)](https://car-market-analytics-talarod.vercel.app/)
 [![React](https://img.shields.io/badge/React-18.3.1-blue)](https://reactjs.org/)
