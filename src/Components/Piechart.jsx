@@ -1,8 +1,6 @@
-import React from 'react';
 import { Pie } from 'react-chartjs-2';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend, Title } from 'chart.js';
 import chroma from 'chroma-js';
-import cars from '../assets/taladrod-cars.min.json';
 
 ChartJS.register(ArcElement, Tooltip, Legend, Title);
 
@@ -61,7 +59,7 @@ const PieChart = ({ data }) => {
     plugins: {
       title: {
         display: true,
-        text: 'Car Availability by Brand',
+        text: 'Car availability by brand',
         font: {
           size: 18,
         },
